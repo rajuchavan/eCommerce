@@ -1,0 +1,8 @@
+﻿@using Orchard.ContentManagement
+@{
+    Iota.eCommerce.Models.ProductPart part = (Iota.eCommerce.Models.ProductPart) Model.ProductPart;
+}
+<article>
+    <b>@Html.ItemDisplayLink(part.Name, (IContent)part)</b><br />
+    Short Description: @part.ShortDescription<br />
+</article>

@@ -1,0 +1,74 @@
+﻿@{
+    Iota.eCommerce.Models.ProductPart part = (Iota.eCommerce.Models.ProductPart) Model.ProductPart;
+    var url = Display.MediaUrl(Profile: "Medium", Path: Url.Content(Model.ProductPart.ProductImages.MediaParts[0].MediaUrl));
+    var urlSmall = Display.MediaUrl(Profile: "Small", Path: Url.Content(Model.ProductPart.ProductImages.MediaParts[0].MediaUrl));
+
+    }
+
+
+
+
+<div class="col-md-6 pull-right">
+    <h1>@part.Name</h1>
+    <strong>
+        <span>previously @part.OldPrice</span>
+        @part.Price
+    </strong>
+    <p>@part.ShortDescription</p>
+    <div class="clearfix visible-xs visible-lg"></div>
+
+
+    <!-- list navigation for tabs -->
+
+    <ul class="nav nav-tabs">
+        <li><a href="#vacc" data-toggle="tab"><span class="glyphicon glyphicon-pushpin"></span> Vaccinations</a></li>
+        <li><a href="#checkups" data-toggle="tab"><span class="glyphicon glyphicon-ok"></span> Checkups</a></li>
+        <li><a href="#senior" data-toggle="tab"><span class="glyphicon glyphicon-heart"></span> Senior Pets</a></li>
+        <li><a href="#diet" data-toggle="tab"><span class="glyphicon glyphicon-cutlery"></span> Diet Plans</a></li>
+    </ul>
+
+    <!-- text for each callout -->
+    <!-- Vaccinations -->
+    <div class="tab-content">
+        <div class="tab-pane fade active in" id="vacc">
+            <p>Dogs and cats are susceptible to a variety of illnesses that can be completely prevented by following the appropriate vaccination schedule.</p>
+            <p><a href="#" class="btn btn-info">Read more >></a></p>
+        </div>
+
+        <!-- Checkups -->
+        <div class="tab-pane fade" id="checkups">
+            <p>Regular checkups are a key factor in pet wellness, and can often unearth problems that could lead to health issues down the road.  </p>
+            <p><a href="#" class="btn btn-info">Read more >></a></p>
+        </div>
+
+        <!-- Senior Pets -->
+        <div class="tab-pane fade" id="senior">
+            <p>Senior pets generally require more medical attention than their younger counterparts, just as senior humans do. So when is a pet considered “senior”? </p>
+            <p><a href="#" class="btn btn-info">Read more >></a></p>
+        </div>
+
+        <!-- Diet Plans -->
+        <div class="tab-pane fade" id="diet">
+            <p>Wisdom veterinarians have all had extensive training in pet nutrition and are your best resources when considering changing your pet’s diet. </p>
+            <p><a href="#" class="btn btn-info">Read more >></a></p>
+        </div>
+    </div>
+
+</div>
+<div class="col-md-6 ">
+    <div>
+        <a href="images/main.jpg"><img src="@url"></a>
+        <p>Rollover to zoom. Click to enlarge.</p>
+        <span class="sale">Sale</span>
+    </div>
+    <div>
+        <a href="#"><img src="@urlSmall" /></a><a href="#"><img src="@urlSmall" /></a><a href="#"><img src="@urlSmall" /></a>
+    </div>
+</div>
+<script>
+    $(function () {
+        $('.nav-tabs a:first').tab('show');
+    });
+</script>
+
+
