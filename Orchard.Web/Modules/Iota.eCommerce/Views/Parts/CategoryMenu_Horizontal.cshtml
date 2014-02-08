@@ -1,0 +1,265 @@
+﻿@using Orchard.ContentManagement
+@using Orchard.MediaLibrary.Models
+
+<div class="container">
+    <div class="navbar" id="megamenu">
+        <div class="navbar-inner" style="overflow: visible;">
+            <div class="container">
+                <ul style="margin-right: 0;" class="nav nav-smart shrinkable">
+                    <li class="dropdown">
+                        <a data-target="#" class="dropdown-toggle" href="/en/books">Books <i class="icon-caret-down chevron"></i> </a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-menu-inner clearfix" style="height: 80px;">
+                                <ul class="drop-list">
+                                    <li class="drop-list-item"><a href="/en/spiegel-bestseller">SPIEGEL-Bestseller</a></li>
+                                    <li class="drop-list-item"><a href="/en/cooking-enjoy">Cooking &amp; Enjoy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="divider-vertical"></li>
+                    <li class="dropdown">
+                        <a data-target="#" class="dropdown-toggle" href="/en/computers">Computer <i class="icon-caret-down chevron"></i> </a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-menu-inner clearfix" style="height: 164px;">
+                                <ul class="drop-list">
+                                    <li class="drop-list-item"><a href="/en/desktops">Desktops</a></li>
+                                    <li class="drop-list-item dropdown-submenu">
+                                        <a href="/en/dsfsfs">Computer Accessories</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="/en/pc-lautsprecher">PC-Lautsprecher</a></li>
+                                            <li>
+                                                <a href="/en/avm-2">AVM</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="/en/avm-phones">AVM Phones</a></li>
+                                                    <li><a href="/en/avm-wlan-router">AVM WLAN Router</a></li>
+                                                    <li><a href="/en/avm-wlan-sticksrepeater">AVM WLAN Sticks+Repeater</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="/en/external-cd-dvd-drives">External CD / DVD Drives</a></li>
+                                            <li>
+                                                <a href="/en/external-hard-drives">External Hard Drives</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="/en/multimedia-hard-drives">Multimedia Hard Drives</a></li>
+                                                    <li><a href="/en/trekstor">Trekstor</a></li>
+                                                    <li><a href="/en/western-digital-2">Western Digital</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="/en/mouse-and-keyboards">Mouse and Keyboards</a></li>
+                                            <li>
+                                                <a href="/en/multifunction-devices">Multifunction Devices</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="/en/inkjet-cartridges">Inkjet cartridges</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="/en/software-2">Software</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="/en/adobe-2">Adobe</a></li>
+                                                    <li><a href="/en/microsoft-2">Microsoft</a></li>
+                                                    <li><a href="/en/smartstore-software">SmartStore Software</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="/en/memory-cards">Memory Cards</a></li>
+                                            <li>
+                                                <a href="/en/tft-monitors">TFT-Monitors</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="/en/benq">BenQ</a></li>
+                                                    <li><a href="/en/hanns-g">Hanns-G</a></li>
+                                                    <li><a href="/en/lg">LG</a></li>
+                                                    <li><a href="/en/samsung-2">Samsung</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="/en/usb-hub">USB Hub</a></li>
+                                            <li><a href="/en/webcams">WebCams</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="drop-list-item"><a href="/en/games">Games</a></li>
+                                    <li class="drop-list-item"><a href="/en/software">Software</a></li>
+                                    <li class="drop-list-item dropdown-submenu">
+                                        <a href="/en/mp3-player">MP3 Player</a>
+                                        <ul class="dropdown-menu" style="height: 140px;">
+                                            <li>
+                                                <a href="/en/apple-ipods">Apple iPods</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="/en/apple-ipod-zubehoer">Apple iPod-Zubeh&ouml;r</a></li>
+                                                    <li><a href="/en/ipod-classic">iPod Classic</a></li>
+                                                    <li><a href="/en/ipod-nano">iPod Nano</a></li>
+                                                    <li><a href="/en/ipod-shuffle">iPod Shuffle</a></li>
+                                                    <li><a href="/en/ipod-touch">iPod Touch</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="divider-vertical"></li>
+                    <li><a data-target="#" href="/en/gift-cardsssss">Gift Cards </a></li>
+                    <li class="divider-vertical"></li>
+                    <li><a data-target="#" href="/en/buy-music-download-immediately">Buy music &amp; download immediately </a></li>
+                    <li class="divider-vertical"></li>
+                    <li class="dropdown">
+                        <a data-target="#" class="dropdown-toggle" href="/en/digital-cameras">Digital Cameras <i class="icon-caret-down chevron"></i> </a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-menu-inner clearfix" style="height: 108px;">
+                                <ul class="drop-list">
+                                    <li class="drop-list-item"><a href="/en/canon-2">Canon</a></li>
+                                    <li class="drop-list-item"><a href="/en/casio-2">Casio</a></li>
+                                    <li class="drop-list-item"><a href="/en/panasonic-2">Panasonic</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="divider-vertical"></li>
+                    <li class="dropdown">
+                        <a data-target="#" class="dropdown-toggle" href="/en/dvd-hdd-recorder">DVD/ HDD Recorder <i class="icon-caret-down chevron"></i> </a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-menu-inner clearfix" style="height: 164px;">
+                                <ul class="drop-list">
+                                    <li class="drop-list-item"><a href="/en/up-to-160-gb">up to 160 GB</a></li>
+                                    <li class="drop-list-item"><a href="/en/up-to-250-gb">up to 250 GB</a></li>
+                                    <li class="drop-list-item"><a href="/en/up-to-400-gb">up to 400 GB</a></li>
+                                    <li class="drop-list-item"><a href="/en/blu-ray-player">Blu-ray-Player</a></li>
+                                    <li class="drop-list-item"><a href="/en/dvd-player">DVD Player</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="divider-vertical"></li>
+                    <li class="dropdown">
+                        <a data-target="#" class="dropdown-toggle" href="/en/navigation-systems">Navigation Systems <i class="icon-caret-down chevron"></i> </a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-menu-inner clearfix" style="height: 108px;">
+                                <ul class="drop-list">
+                                    <li class="drop-list-item"><a href="/en/garmin-2">Garmin</a></li>
+                                    <li class="drop-list-item"><a href="/en/navigon-2">Navigon</a></li>
+                                    <li class="drop-list-item"><a href="/en/tomtom-2">TomTom</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="divider-vertical"></li>
+                    <li class="dropdown">
+                        <a data-target="#" class="dropdown-toggle" href="/en/netbooks-notebooks">Netbooks &amp; Notebooks <i class="icon-caret-down chevron"></i> </a>
+                        <div class="dropdown-menu pull-right">
+                            <div class="dropdown-menu-inner clearfix" style="height: 136px;">
+                                <ul class="drop-list">
+                                    <li class="drop-list-item dropdown-submenu">
+                                        <a href="/en/apple-macbook">Apple MacBook</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="/en/macbook-air">MacBook Air</a></li>
+                                            <li><a href="/en/macbook-pro">MacBook Pro</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="drop-list-item"><a href="/en/including-windows-8">Including Windows 8</a></li>
+                                    <li class="drop-list-item"><a href="/en/including-windows-7">Including Windows 7</a></li>
+                                    <li class="drop-list-item"><a href="/en/including-windows-xp">Including Windows XP</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="divider-vertical" style="display: none;"></li>
+                    <li class="dropdown" style="display: none;">
+                        <a data-target="#" class="dropdown-toggle" href="/en/smartphones-cell-phones">Smartphones &amp; Cell Phones <i class="icon-caret-down chevron"></i> </a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-menu-inner clearfix" style="height: 248px;">
+                                <ul class="drop-list">
+                                    <li class="drop-list-item"><a href="/en/apple-2">Apple</a></li>
+                                    <li class="drop-list-item"><a href="/en/blackberry-2">Blackberry</a></li>
+                                    <li class="drop-list-item"><a href="/en/htc-2">HTC</a></li>
+                                    <li class="drop-list-item"><a href="/en/lg-2">LG</a></li>
+                                    <li class="drop-list-item"><a href="/en/motorola-2">Motorola</a></li>
+                                    <li class="drop-list-item"><a href="/en/nokia-2">Nokia</a></li>
+                                    <li class="drop-list-item"><a href="/en/samsung-3">Samsung</a></li>
+                                    <li class="drop-list-item"><a href="/en/sony-2">Sony</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="divider-vertical" style="display: none;"></li>
+                    <li class="dropdown" style="display: none;">
+                        <a data-target="#" class="dropdown-toggle" href="/en/software-3">Software <i class="icon-caret-down chevron"></i> </a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-menu-inner clearfix" style="height: 108px;">
+                                <ul class="drop-list">
+                                    <li class="drop-list-item"><a href="/en/adobe-3">Adobe</a></li>
+                                    <li class="drop-list-item"><a href="/en/microsoft-3">Microsoft</a></li>
+                                    <li class="drop-list-item"><a href="/en/textiljacken">Textiljacken</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="divider-vertical" style="display: none;"></li>
+                    <li style="display: none;"><a data-target="#" href="/en/tablet-pcs">Tablet PCs </a></li>
+                    <li class="divider-vertical" style="display: none;"></li>
+                    <li style="display: none;"><a data-target="#" href="/en/projektoren-2">Projektoren </a></li>
+                    <li class="divider-vertical" style="display: none;"></li>
+                    <li style="display: none;"><a data-target="#" href="/en/kleidung">Kleidung </a></li>
+                    <li class="divider-vertical" style="display: none;"></li>
+                    <li class="dropdown" style="display: none;">
+                        <a data-target="#" class="dropdown-toggle" href="/en/motorrad-2">Motorrad <i class="icon-caret-down chevron"></i> </a>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-menu-inner clearfix" style="height: 136px;">
+                                <ul class="drop-list">
+                                    <li class="drop-list-item dropdown-submenu">
+                                        <a href="/en/zubehoer-2">Zubeh&ouml;r</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="/en/auspuffanlagen">Auspuffanlagen</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="drop-list-item dropdown-submenu">
+                                        <a href="/en/ducati-2"> Ducati</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="/en/ducati-parts"> Ducati Parts</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="drop-list-item"><a href="/en/kawasaki">Kawasaki</a></li>
+                                    <li class="drop-list-item dropdown-submenu">
+                                        <a href="/en/helme">Helme</a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="/en/arai">Arai</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="/en/arai-tour-x4">Arai Tour-X4</a></li>
+                                                    <li><a href="/en/arai-tour-x3">Arai Tour-X3</a></li>
+                                                    <li><a href="/en/arai-rx-7-rc-2">Arai RX-7 RC</a></li>
+                                                    <li><a href="/en/arai-chaser-v">Arai Chaser V</a></li>
+                                                    <li><a href="/en/arai-quantum">Arai Quantum</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="divider-vertical" style="display: none;"></li>
+                    <li style="display: none;"><a data-target="#" href="/en/watches">Watches </a></li>
+                    <li class="divider-vertical" style="display: none;"></li>
+                    <li style="display: none;"><a data-target="#" href="/en/zeitschriften">Zeitschriften </a></li>
+                </ul>
+                <ul class="nav nav-smart shrink-menu pull-right hide" style="display: block;">
+                    <li class="dropdown">
+                        <a onclick="return false;" data-target="#" href="#" class="dropdown-toggle"> <sup>...</sup> </a>
+                        <div class="dropdown-menu pull-right">
+                            <div class="dropdown-menu-inner">
+                                <ul class="drop-list">
+                                    <li class="drop-list-item"><a href="/en/smartphones-cell-phones">Smartphones &amp; Cell Phones </a></li>
+                                    <li class="drop-list-item"><a href="/en/software-3">Software </a></li>
+                                    <li class="drop-list-item"><a href="/en/tablet-pcs">Tablet PCs </a></li>
+                                    <li class="drop-list-item"><a href="/en/projektoren-2">Projektoren </a></li>
+                                    <li class="drop-list-item"><a href="/en/kleidung">Kleidung </a></li>
+                                    <li class="drop-list-item"><a href="/en/motorrad-2">Motorrad </a></li>
+                                    <li class="drop-list-item"><a href="/en/watches">Watches </a></li>
+                                    <li class="drop-list-item"><a href="/en/zeitschriften">Zeitschriften </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

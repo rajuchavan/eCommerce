@@ -1,0 +1,53 @@
+﻿@model Iota.eCommerce.Models.ProductPart
+<fieldset>
+    <legend><b>Product Fields</b></legend>
+
+    <div class="editor-label">@Html.LabelFor(x => x.Name)</div>
+    <div class="editor-field">
+        @Html.EditorFor(x => x.Name)
+        @Html.ValidationMessageFor(x => x.Name)
+    </div>
+
+    <div class="editor-label">@Html.LabelFor(x => x.ShortDescription)</div>
+    <div class="editor-field">
+        @Html.EditorFor(x => x.ShortDescription)
+        @Html.ValidationMessageFor(x => x.ShortDescription)
+    </div>
+
+    <div class="editor-label">@Html.LabelFor(x => x.ShortDescription)</div>
+    <div class="editor-field">
+        @Html.EditorFor(x => x.ShortDescription)
+        @Html.ValidationMessageFor(x => x.ShortDescription)
+    </div>
+
+    <div class="editor-label">@Html.LabelFor(x => x.VendorId)</div>
+    <div class="editor-field">
+        @Html.EditorFor(x => x.VendorId)
+        @Html.ValidationMessageFor(x => x.VendorId)
+    </div>
+
+    <div class="editor-label">@Html.LabelFor(x => x.ParentCategoryId)</div>
+    <div class="editor-field">
+        @Html.EditorFor(x => x.ParentCategoryId)
+        @Html.ValidationMessageFor(x => x.ParentCategoryId)
+    </div>
+
+    <div class="editor-label">@Html.LabelFor(x => x.Price)</div>
+    <div class="editor-field">
+        @Html.EditorFor(x => x.Price)
+        @Html.ValidationMessageFor(x => x.Price)
+    </div>
+
+    <div class="editor-label">@Html.LabelFor(x => x.OldPrice)</div>
+    <div class="editor-field">
+        @Html.EditorFor(x => x.OldPrice)
+        @Html.ValidationMessageFor(x => x.OldPrice)
+    </div>
+
+    <div class="editor-label">@Html.LabelFor(x => x.Sku)</div>
+    <div class="editor-field">
+        @Html.EditorFor(x => x.Sku)
+        @Html.ValidationMessageFor(x => x.Sku)
+    </div>
+
+</fieldset>

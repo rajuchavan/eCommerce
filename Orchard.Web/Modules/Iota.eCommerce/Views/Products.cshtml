@@ -1,0 +1,7 @@
+﻿@using Orchard.ContentManagement
+@using Iota.eCommerce.Models
+
+@foreach (dynamic item in Model.Products)
+{
+        @Display.Product(ProductPart: item)
+}

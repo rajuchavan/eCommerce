@@ -1,0 +1,7 @@
+﻿@{
+    Iota.eCommerce.Models.CategoryPart part = (Iota.eCommerce.Models.CategoryPart) Model.CategoryPart;
+}
+<article>
+    <b>@Html.ItemDisplayLink(part.Name, (IContent)part)</b><br />
+    Description: @part.Description<br />
+</article>

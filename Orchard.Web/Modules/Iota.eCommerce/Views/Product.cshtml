@@ -1,0 +1,18 @@
+﻿@using System.Web.Mvc.Html;
+@using Orchard.Mvc.Html;
+@{
+    Iota.eCommerce.Models.ProductPart part = (Iota.eCommerce.Models.ProductPart)Model.ProductPart;
+    var url = Display.MediaUrl(Profile: "Small", Path: Url.Content(Model.ProductPart.ProductImages.MediaParts[0].MediaUrl));
+}
+
+<div class="col-xs-6 col-sm-4 col-md-3">
+    <div class="thumbnail">
+        <a href="@Url.ItemDisplayUrl((IContent)part)"><img alt="@part.Name" class="img-responsive" src="@url" /></a>
+        <div class="caption">
+            <h4>@part.Name</h4>
+            <p>@part.ShortDescription</p>
+            <strong><em>previously @part.OldPrice</em>@part.Price</strong>
+            <p><a href="#" class="btn btn-primary" role="button">Buy</a></p>
+        </div>
+    </div>
+</div>

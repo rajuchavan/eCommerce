@@ -1,0 +1,24 @@
+﻿@using Orchard.ContentManagement
+@using Iota.eCommerce.Models
+@model Iota.eCommerce.ViewModels.CategoryViewModel
+<article>
+    
+    @{
+    dynamic categoryPart = @Model.Category;
+    }
+   
+    <h2>@categoryPart.ContentItem.CategoryPart.Name ------12121</h2>
+        @foreach(dynamic item in Model.SubCategories) {
+            @Display.Category(CategoryPart : item);
+            }
+
+    @if(Model.Products.Count() > 0)
+    {
+    <h2>Products ---- 111</h2>
+        foreach(dynamic item in Model.Products) {
+            @Display.Product(ProductPart : item);
+        }
+    }
+   
+
+</article>

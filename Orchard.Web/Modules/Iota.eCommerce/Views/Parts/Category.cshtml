@@ -1,0 +1,5 @@
+﻿@{
+    Iota.eCommerce.Models.CategoryPart part = (Iota.eCommerce.Models.CategoryPart)Model.CategoryPart;
+    var url = Display.MediaUrl(Profile: "Small", Path: Url.Content(Model.CategoryPart.CategoryImage.MediaParts[0].MediaUrl));
+}
+<h2>@part.Name</h2>

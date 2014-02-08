@@ -1,0 +1,29 @@
+﻿@model Iota.eCommerce.Models.CategoryPart
+<fieldset>
+    <legend>Category Fields</legend>
+
+    <div class="editor-label">@Html.LabelFor(x => x.Name)</div>
+    <div class="editor-field">
+        @Html.EditorFor(x => x.Name)
+        @Html.ValidationMessageFor(x => x.Name)
+    </div>
+
+    <div class="editor-label">@Html.LabelFor(x => x.Description)</div>
+    <div class="editor-field">
+        @Html.EditorFor(x => x.Description)
+        @Html.ValidationMessageFor(x => x.Description)
+    </div>
+
+    <div class="editor-label">@Html.LabelFor(x => x.PriceRanges)</div>
+    <div class="editor-field">
+        @Html.EditorFor(x => x.PriceRanges)
+        @Html.ValidationMessageFor(x => x.PriceRanges)
+    </div>
+
+    <div class="editor-label">@Html.LabelFor(x => x.ParentCategoryId)</div>
+    <div class="editor-field">
+        @Html.EditorFor(x => x.ParentCategoryId)
+        @Html.ValidationMessageFor(x => x.ParentCategoryId)
+    </div>
+
+</fieldset>
